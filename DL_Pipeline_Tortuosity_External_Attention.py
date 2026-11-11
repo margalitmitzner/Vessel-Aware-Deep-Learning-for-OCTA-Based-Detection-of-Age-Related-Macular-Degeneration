@@ -15,9 +15,9 @@
 #
 # Each experiment saves:
 #   • Text results:
-#       {OUTPUT_ROOT}/ML_results_external_attention_{GROUP}_hotspot_sigma_PCT_<sigma>
+#      
 #   • Best models:
-#       {OUTPUT_ROOT}/models_external_attention_{GROUP}_sigma_<sigma>/best_resnet18_foldK.pth
+#       
 #
 # BINARY LABELING:
 #   AMD    → 1 (positive)
@@ -25,24 +25,20 @@
 #
 # INPUTS:
 #   Raw OCTA (png):
-#       /home/mgmitzner/Tortuosity_training/OCTA500_images_6_mm/{ID}.png
+#     
 #
 #   Hotspot attention maps (grayscale "GRAY" PNGs):
 #       Artery:
-#         /home/mgmitzner/Tortuosity_training/11_12_25/11_05_heatmaps_for_DL/artery/hotspots/
-#           artery_{ID}_hotspot_sigma0.020_GRAY.png
+
 #
 #       Vein:
-#         /home/mgmitzner/Tortuosity_training/11_12_25/11_05_heatmaps_for_DL/vein/hotspots/
-#           vein_{ID}_hotspot_sigma0.020_GRAY.png
+
 #
 #       Large vessels:
-#         /home/mgmitzner/Tortuosity_training/11_12_25/11_05_heatmaps_for_DL/large_vessel/hotspots/
-#           largevessel_{ID}_hotspot_sigma0.020_GRAY.png
+
 #
 #       Capillaries (and inverted capillaries, using the same files):
-#         /home/mgmitzner/Tortuosity_training/11_12_25/11_05_heatmaps_for_DL/capillary/hotspots/
-#           capillary_{ID}_hotspot_sigma0.020_GRAY.png
+
 #
 #       (σ values: 0.020, 0.040, 0.060, 0.080)
 #
@@ -92,14 +88,14 @@ from sklearn.metrics import (
 from tqdm import tqdm
 
 # ------------------------ PATHS / CONSTANTS ------------------------
-RAW_DIR = "/home/mgmitzner/Tortuosity_training/OCTA500_images_6_mm"  # raw OCTA PNGs
-DEMOGRAPHICS_XLSX = "/home/mgmitzner/Tortuosity_training/Demographic_clinical_OCTA_500.xlsx"  # labels
-OUTPUT_ROOT = "/home/mgmitzner/Tortuosity_training/11_12_25/output_a_v_lv_c_ic"  # where results/models are saved
+RAW_DIR =   # raw OCTA PNGs
+DEMOGRAPHICS_XLSX =   # labels
+OUTPUT_ROOT =   # where results/models are saved
 os.makedirs(OUTPUT_ROOT, exist_ok=True)  # ensure output root exists
 
 # ------------------------ ATTENTION SOURCES ------------------------
 # Hotspot roots and filename prefixes per group
-HOTSPOT_BASE = "/home/mgmitzner/Tortuosity_training/11_12_25/11_05_heatmaps_for_DL"
+HOTSPOT_BASE = 
 
 # (group_tag, filename_prefix, hotspot_dir, invert_heatmap_flag)
 ATTN_GROUPS = [
