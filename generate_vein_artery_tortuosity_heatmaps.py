@@ -10,15 +10,11 @@ For each segmentation, this script computes:
   - One colored dot map overlay on the binary vessel mask (tortuosity-coded dots, jet colormap, no colorbar)
 
 Inputs:
-  Artery BMP : /home/mgmitzner/Tortuosity_training/GT_Artery/{ID}.bmp
-  Vein   BMP : /home/mgmitzner/Tortuosity_training/GT_Vein/{ID}.bmp
-  Large vsl  : /home/mgmitzner/Tortuosity_training/OCTA500_large_vessel_segmentations_6_mm/{ID}.png
+  Artery BMP :
+  Vein   BMP : 
+  Large vsl  : 
 
 Outputs:
-  /home/mgmitzner/Tortuosity_training/11_05_heatmaps_for_DL/artery/hotspots/artery_{ID}_hotspot_sigma0.020_GRAY.png
-  /home/mgmitzner/Tortuosity_training/11_05_heatmaps_for_DL/artery/hotspots/artery_{ID}_hotspot_sigma0.020_COLOR.png
-  ...
-  /home/mgmitzner/Tortuosity_training/11_05_heatmaps_for_DL/artery/dots/artery_{ID}_dots.png
 
   (Similarly for vein_{ID} in /vein/... and largevessel_{ID} in /large_vessel/...)
 """
@@ -33,11 +29,11 @@ from skimage import io, morphology, measure
 from skimage.morphology import remove_small_objects
 
 # -------------------- I/O ROOTS --------------------
-ART_ROOT = "/home/mgmitzner/Tortuosity_training/GT_Artery"
-VEI_ROOT = "/home/mgmitzner/Tortuosity_training/GT_Vein"
-LV_ROOT  = "/home/mgmitzner/Tortuosity_training/OCTA500_large_vessel_segmentations_6_mm"
+ART_ROOT = 
+VEI_ROOT = 
+LV_ROOT  = 
 
-BASE_OUT_ROOT = "/home/mgmitzner/Tortuosity_training/11_05_heatmaps_for_DL"
+BASE_OUT_ROOT = 
 
 # -------------------- Params -----------------
 # Four blur levels as a fraction of max(H,W).
