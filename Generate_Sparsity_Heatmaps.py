@@ -7,10 +7,10 @@ import numpy as np
 from scipy.ndimage import gaussian_filter
 
 # -------------------- PATHS --------------------
-CAP_ROOT = "/home/mgmitzner/Tortuosity_training/GT_Capillary"
-LV_ROOT  = "/home/mgmitzner/Tortuosity_training/OCTA500_large_vessel_segmentations_6_mm"
+CAP_ROOT = 
+LV_ROOT  = 
 
-OUT_ROOT = "/home/mgmitzner/Tortuosity_training/11_12_25/low_vessel_density_maps/"
+OUT_ROOT =
 os.makedirs(OUT_ROOT, exist_ok=True)
 
 # Gaussian sigmas (fractions of max image dimension)
