@@ -18,16 +18,11 @@
 #   - Therefore, **no inversion** is applied to any heatmaps.
 #
 # INPUTS:
-#   Raw OCTA (png):
-#       /home/mgmitzner/Tortuosity_training/OCTA500_images_6_mm/{ID}.png
+#   Raw OCTA (png)
+# 
 #
 #   Low-density attention maps (grayscale PNGs, NO "_COLOR" in filename):
-#       /home/mgmitzner/Tortuosity_training/11_12_25/low_vessel_density_maps/
-#           artery_{ID}_sigma0.020.png
-#           vein_{ID}_sigma0.020.png
-#           largevessel_{ID}_sigma0.020.png
-#           capillary_{ID}_sigma0.020.png
-#       (σ values: 0.020, 0.040, 0.060, 0.080)
+
 #
 # The rest of the experimental setup (folds, model, loss, optimizer, scheduler, metrics)
 # is identical to the tortuosity-hotspot script you pasted.
@@ -60,11 +55,11 @@ from sklearn.metrics import (
 from tqdm import tqdm
 
 # ------------------------ PATHS / CONSTANTS ------------------------
-RAW_DIR = "/home/mgmitzner/Tortuosity_training/OCTA500_images_6_mm"  # raw OCTA PNGs
-DEMOGRAPHICS_XLSX = "/home/mgmitzner/Tortuosity_training/Demographic_clinical_OCTA_500.xlsx"  # labels
+RAW_DIR =  # raw OCTA PNGs
+DEMOGRAPHICS_XLSX =  # labels
 
-# New output root (so you don't overwrite tortuosity experiments)
-OUTPUT_ROOT = "/home/mgmitzner/Tortuosity_training/11_12_25/output_lowdensity_a_v_lv_c"
+# New output root 
+OUTPUT_ROOT = 
 os.makedirs(OUTPUT_ROOT, exist_ok=True)
 
 # ------------------------ ATTENTION SOURCES ------------------------
@@ -73,7 +68,7 @@ os.makedirs(OUTPUT_ROOT, exist_ok=True)
 #   capillary_10001_sigma0.020.png
 #   largevessel_10001_sigma0.020.png
 #   vein_10001_sigma0.020.png
-LOWDENSITY_DIR = "/home/mgmitzner/Tortuosity_training/11_12_25/low_vessel_density_maps"
+LOWDENSITY_DIR = ""
 
 # (group_tag, filename_prefix, heatmap_dir, invert_heatmap_flag)
 # invert_heatmap_flag is always False here.
