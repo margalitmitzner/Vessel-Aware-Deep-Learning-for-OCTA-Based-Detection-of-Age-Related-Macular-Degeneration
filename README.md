@@ -1,2 +1,2 @@
-# Vessel-Aware-Deep-Learning-for-OCTA-Based-Detection-of-Age-Related-Macular-Degeneration
+# Interpretable region and vessel sparsity analysis for optical coherence tomography angiography--based classification of age-related macular degeneration
 Code used in computation of sparsity-based heatmaps for use in external multiplicative attention applied to OCTA superficial retinal vessels in classifying eyes with age-related macular degeneration, with application of external attention by vessel type (artery, vein, capillary) as well as by macular subregion (fovea, parafovea, whole 6x6 mm^2 OCTA image).
