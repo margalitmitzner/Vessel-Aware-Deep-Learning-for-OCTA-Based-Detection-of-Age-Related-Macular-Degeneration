@@ -105,7 +105,7 @@ FOCAL_GAMMA = 2.0
 SAVE_MODELS = True
 
 # Attention fusion: convert normalized heatmap in [0,1] to per-pixel weights in [ATTEN_MIN, ATTEN_MAX]
-ATTEN_MIN = 0.5
+ATTEN_MIN = 1.0
 ATTEN_MAX = 1.5
 
 # ------------------------ REPRODUCIBILITY ------------------------
