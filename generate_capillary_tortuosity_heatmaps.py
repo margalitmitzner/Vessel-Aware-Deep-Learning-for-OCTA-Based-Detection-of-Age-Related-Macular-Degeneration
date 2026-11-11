@@ -16,14 +16,10 @@ For each capillary segmentation ID in [10001, 10300]:
   - Save grayscale + color hotspot PNGs
 
 Inputs:
-  /home/mgmitzner/Tortuosity_training/GT_Capillary/{ID}.bmp
+
 
 Outputs (examples):
-  /home/mgmitzner/Tortuosity_training/11_12_25/11_05_heatmaps_for_DL/capillary/hotspots/
-      capillary_10001_hotspot_sigma0.020_GRAY.png
-      capillary_10001_hotspot_sigma0.020_COLOR.png
-      ...
-"""
+
 
 import os
 import numpy as np
@@ -36,13 +32,13 @@ from scipy.ndimage import gaussian_filter
 
 # ----------------- paths / parameters -----------------
 
-CAP_ROOT = "/home/mgmitzner/Tortuosity_training/GT_Capillary"
+CAP_ROOT = 
 EXT = ".bmp"
 
 ID_MIN = 10001
 ID_MAX = 10300
 
-BASE_OUT_ROOT = "/home/mgmitzner/Tortuosity_training/11_12_25/11_05_heatmaps_for_DL"
+BASE_OUT_ROOT = 
 HOTSPOT_DIR   = os.path.join(BASE_OUT_ROOT, "capillary", "hotspots")
 os.makedirs(HOTSPOT_DIR, exist_ok=True)
 
