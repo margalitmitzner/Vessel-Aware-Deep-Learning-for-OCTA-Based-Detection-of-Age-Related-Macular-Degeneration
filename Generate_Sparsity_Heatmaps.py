@@ -1,3 +1,5 @@
+#Generate sparsity heatmap for whole OCTA image 
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
